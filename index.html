@@ -3,8 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script href="styles.css"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stock Price Check</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Flex Container -->
+    <div class="flex-container">
+      <!-- Heading -->
+      <h1 class="flex-item">Stock Price Checker</h1>
+
+      <!-- Form Container -->
+      <div class="form-container">
+        <!-- Form Group -->
+        <div class="form-group">
+          <label for="availableFunds">Available Funds:</label>
+          <input
+            type="number"
+            id="availableFunds"
+            placeholder="$ Enter your funds..."
+          />
+          <span id="availableFundsError"></span>
+        </div>
+
+        <!-- Form Group -->
+        <div class="form-group">
+          <label for="stockPrice">Stock Price:</label>
+          <input
+            type="number"
+            id="stockPrice"
+            placeholder="$ Enter price of stock..."
+          />
+          <span id="stockPriceError"></span>
+        </div>
+
+        <!-- Form Group -->
+        <div class="form-group">
+          <input
+            type="submit"
+            value="Submit"
+            class="submitButton"
+            onclick="getStockAmount(event)"
+          />
+        </div>
+
+        <div class="output">
+          <p id="totalShares"></p>
+        </div>
+      </div>
+
+      <div class="">
+        <div id="profitOutput"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

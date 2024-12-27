@@ -1,0 +1,100 @@
+body {
+  font-family: "Open Sans", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #113537;
+  font-size: 1rem;
+}
+
+.flex-container {
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+label {
+  width: 125px;
+  text-align: right;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submitButton {
+  background-color: #488b49;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.submitButton:hover {
+  background-color: #3e7e3e;
+}
+
+.submitButton:focus {
+  border: 1px solid #1a6b16; /* Change the border color and width */
+  outline: none; /* Remove the default outline for better control */
+  box-shadow: 0 0 5px rgba(13, 157, 13, 0.5); /* Add a glow effect */
+}
+
+.output {
+  align-self: center;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  color: #f08700;
+}
+
+#availableFundsError,
+#stockPriceError {
+  font-size: 0.65rem;
+  color: #f76f8e;
+}
+
+.profit {
+  font-size: 0.9rem;
+  margin-top: 0px;
+}
+
+.profit span {
+  color: #f08700;
+  font-weight: 500;
+}
